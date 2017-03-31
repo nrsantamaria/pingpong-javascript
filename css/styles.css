@@ -14,14 +14,28 @@ body {
 }
 
 .jumbotron h1 {
-  font-weight: bold;
+  font-weight: bolder;
   color: #01193f;
+  font-family: 'Poppins', sans-serif;
 }
 
 .well {
   background-color: rgb(246, 249, 243);
+  text-align: center;
+  line-height: 25px;
 }
 
+h2, h3 {
+  color: rgb(255, 207, 128);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+  color: rgb(128, 140, 159);
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
 .results {
   display: none;
 }

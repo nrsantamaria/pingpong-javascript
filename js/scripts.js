@@ -1,7 +1,6 @@
 // business logic
 var numbersTest = function(userInput) {
   var pingsArray = ["ping", "pong"];
-  for (var index = 0; index < pingsArray.length; index +=1) {
     if (userInput % 15 === 0) {
       return pingsArray.join('');
     } else if (userInput % 3 == 0) {
@@ -11,7 +10,6 @@ var numbersTest = function(userInput) {
     } else {
       return userInput;
     };
-  };
 };
 //user interface logic
 $(document).ready(function(){
