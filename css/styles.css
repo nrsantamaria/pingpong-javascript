@@ -1,15 +1,23 @@
+body {
+  background-color: rgb(165,198,218);
+}
+.container{
+  background-color: white;
+}
 .jumbotron {
   text-align: center;
   padding: 2%;
   background-image: url("../img/pingpong.jpg");
   background-position: bottom left;
-  opacity: 0.2;
+  opacity: 0.5;
+  margin-top: 10px;
 }
 
 .jumbotron h1 {
-  color: darkblue;
   font-weight: bold;
+  color: #01193f;
 }
+
 .well {
   background-color: rgb(246, 249, 243);
 }
