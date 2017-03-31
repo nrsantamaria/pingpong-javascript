@@ -1,18 +1,17 @@
 .jumbotron {
   text-align: center;
-  margin: 2%;
   padding: 2%;
+  background-image: url("../img/pingpong.jpg");
+  background-position: bottom left;
+  opacity: 0.2;
 }
 
-.side-bar {
-  float: left;
-  width: 200px;
-  padding-right: 15px;
-  padding-left: 15px;
+.jumbotron h1 {
+  color: darkblue;
+  font-weight: bold;
 }
-
-.main {
-  padding-top: 1px;
+.well {
+  background-color: rgb(246, 249, 243);
 }
 
 .results {
