@@ -1,49 +1,18 @@
-//business logic
-var numbersTest = function(userInput){
-  var pingArray = [pingpong, ping, pong]
-  var userInputSubstring = userInput.substring(0);
-
-  if (pingpong = true){
-    return text;
-  } else if (ping = true){
-    return text;
-  } else if (pong = true){
-    return text;
-  } else {
-    return userInputSubtring.text();
-  }
-
-//numbers divisible by 15
-  var pingpong = function(pp){
-    var i = 0;
-    var text = "";
-    while (i%15 = 0) {
-      text += "pingpong";
-      i++;
+// business logic
+var pingArray = ["pingpong", "ping", "pong"]
+var numbersTest = function(userInput) {
+  pingarray.forEach(function(ping){
+    if (userInput % 15 === 0) {
+      return pingArray[0];
+    } else if (userInput % 3 == 0) {
+      return pingArray[1]
+    } else if (userInput % 5 === 0) {
+      return pingArray[2]
+    } else {
+      return userInput;
     };
-    return text;
   };
-//numbers divisible by 3
-  var ping = function(pi){
-    var i = 0;
-    var text = "";
-    while (i%3 = 0){
-      text += "ping";
-      i++;
-    };
-    return text;
-  };
-//numbers divisible by 5
-  var pong = function(po){
-    var i = 0;
-    var text = "";
-    while (i%5 = 0){
-      text += "pong";
-      i++;
-    };
-    return text;
-  };
-
+});
 //user interface logic
 $(document).ready(function(){
   $("form#number-form").submit(function(event){
