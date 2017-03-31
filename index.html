@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Ping Pong Numbers Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Ping Pong Numbers Game</h1>
+      </div>
+      <div class="side-bar">
+        <h2>About Ping Pong</h2>
+        <h3>Created by:</h3>
+        <p>Nicole Santamaria</p>
+        <h3>GitHub Username/URL:</h3>
+        <p><a href="https://github.com/nrsantamaria">nrsantamaria</a></p>
+        <h3>Week 3: Arrays & Looping Test for:</h3>
+        <p>Intro to Programming: JavaScript</p>
+      </div>
+      <h2>How to Play the Ping Pong Numbers Game:</h2>
+      <ul>
+        <li>Enter a number in the field below.</li>
+        <li>Your number will appear in a list at the bottom of the page.</li>
+      </ul>
+      <p>There are a few exceptions to how your number will appear on the page:</p>
+      <ul>
+        <li>If you number is divisible by 3 it will become "ping"</li>
+        <li>If your number is divisible by 5 it will become "pong"</li>
+        <li>If your number is divisble by 3 and 5 it will become "pingpong"</li>
+      </ul>
+      <form id="number-form">
+        <label for="number">Enter your number here:</label>
+        <input type="number" name="number" min="1">
+        <input type="submit">
+      </form>
+      <div class="results">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
