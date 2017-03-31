@@ -11,37 +11,39 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Ping Pong Numbers Game</h1>
+        <h1>Ping Pong</h1>
+        <h2>Numbers Game</h2>
       </div>
       <div class="side-bar">
-        <h2>About Ping Pong</h2>
-        <h3>Created by:</h3>
+        <h3>About Ping Pong</h3>
+        <h4>Created by:</h4>
         <p>Nicole Santamaria</p>
-        <h3>GitHub Username/URL:</h3>
+        <h4>GitHub Username/URL:</h4>
         <p><a href="https://github.com/nrsantamaria">nrsantamaria</a></p>
-        <h3>Week 3: Arrays & Looping Test for:</h3>
+        <h4>Week 3: Arrays & Looping Test for:</h4>
         <p>Intro to Programming: JavaScript</p>
       </div>
-      <h2>How to Play the Ping Pong Numbers Game:</h2>
-      <ul>
-        <li>Enter a number in the field below.</li>
-        <li>Your number will appear in a list at the bottom of the page.</li>
-      </ul>
-      <p>There are a few exceptions to how your number will appear on the page:</p>
-      <ul>
-        <li>If you number is divisible by 3 it will become "ping"</li>
-        <li>If your number is divisible by 5 it will become "pong"</li>
-        <li>If your number is divisble by 3 and 5 it will become "pingpong"</li>
-      </ul>
-      <form id="number-form">
-        <label for="number">Enter your number here:</label>
-        <input type="number" name="number" min="1">
-        <input type="submit">
-      </form>
-      <div class="results">
+      <div class="main">
+        <h2>How to Play:</h2>
         <ul>
-          <li></li>
+          <li>Enter a number in the field below.</li>
+          <li>Your number will appear in a list at the bottom of the page.</li>
         </ul>
+        <p><strong>There are a few exceptions to how your number will appear on the page:</strong></p>
+        <ul>
+          <li>If you number is divisible by 3 it will become "ping"</li>
+          <li>If your number is divisible by 5 it will become "pong"</li>
+          <li>If your number is divisble by 3 and 5 it will become "pingpong"</li>
+        </ul>
+        <form id="number-form">
+          <label for="number">Enter your number here:</label>
+          <input type="number" name="number" min="1">
+          <input type="submit">
+        </form>
+        <div>
+          <ul class="results">
+          </ul>
+        </div>
       </div>
     </div>
   </body>
