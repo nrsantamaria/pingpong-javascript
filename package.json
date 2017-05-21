@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "#### _This is a page that collects the users number and displays it back unless it is divisible by 3, 5 or 15, Friday, March 31, 2017_",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

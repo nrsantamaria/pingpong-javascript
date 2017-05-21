@@ -1,4 +1,9 @@
 var gulp = require('gulp');
+
+gulp.task('myTask', function(){
+  console.log('hello gulp');
+});
+
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
