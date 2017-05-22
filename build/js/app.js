@@ -1,1 +1,57 @@
-!function n(r,e,o){function t(i,p){if(!e[i]){if(!r[i]){var a="function"==typeof require&&require;if(!p&&a)return a(i,!0);if(u)return u(i,!0);var f=new Error("Cannot find module '"+i+"'");throw f.code="MODULE_NOT_FOUND",f}var c=e[i]={exports:{}};r[i][0].call(c.exports,function(n){var e=r[i][1][n];return t(e||n)},c,c.exports,n,r,e,o)}return e[i].exports}for(var u="function"==typeof require&&require,i=0;i<o.length;i++)t(o[i]);return t}({1:[function(n,r,e){function o(n){this.skin=n}o.prototype.pingPong=function(n){for(var r=[],e=["ping","pong"],o=1;o<=n;o++)o%15==0?r.push(e.join("")):o%3==0?r.push(e[0]):o%5==0?r.push(e[1]):r.push(o);return r},e.calculatorModule=o},{}],2:[function(n,r,e){var o=n("./../js/pingpong.js").calculatorModule;$(document).ready(function(){$("#number-form").submit(function(n){n.preventDefault();var r=$("#number").val();new o("hot pink").pingPong(r).forEach(function(n){$(".results").append("<li>"+n+"</li>")})})}),$(document).ready(function(){$("#signup").submit(function(n){n.preventDefault();var r=$("#email").val();$("#signup").hide(),$("#solution").prepend("<p>Thank you, "+r+" has been added to our list!</p>")})})},{"./../js/pingpong.js":1}]},{},[2]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+// business logic
+function Calculator(skinName) {
+  this.skin = skinName;
+}
+
+Calculator.prototype.pingPong = function(goal) {
+  var output = [];
+  var pingsArray = ["ping", "pong"];
+  for (var i = 1; i <= goal; i++) {
+    if (i % 15 === 0) {
+      output.push(pingsArray.join(''));
+    } else if (i % 3 === 0) {
+      output.push(pingsArray[0]);
+    } else if (i % 5 === 0) {
+      output.push(pingsArray[1]);
+    } else {
+      output.push(i);
+    }
+  }
+  return output;
+};
+
+exports.calculatorModule = Calculator;
+// allows the calculator module with its function to be accessed in other parts of the project.
+
+},{}],2:[function(require,module,exports){
+//user interface logic
+var Calculator = require('./../js/pingpong.js').calculatorModule;
+// accesses the calculator module and creates a variable so the function can be used.
+
+$(document).ready(function() {
+  $("#number-form").submit(function(event) {
+    event.preventDefault();
+    var goal = $("#number").val();
+    var simpleCalculator = new Calculator("hot pink");
+    var output = simpleCalculator.pingPong(goal);
+    output.forEach(function(element) {
+      $(".results").append("<li>" + element + "</li>");
+    });
+  });
+});
+
+$(document).ready(function(){
+  $('#signup').submit(function(event){
+    event.preventDefault();
+    var email = $('#email').val();
+    $('#signup').hide();
+    $('#solution').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
+  });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
+});
+
+},{"./../js/pingpong.js":1}]},{},[2]);
