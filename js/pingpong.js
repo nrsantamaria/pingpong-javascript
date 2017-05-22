@@ -12,12 +12,12 @@ Calculator.prototype.pingPong = function(goal) {
     } else if (i % 3 === 0) {
       output.push(pingsArray[0]);
     } else if (i % 5 === 0) {
-      output.push(pingsArray[1])
+      output.push(pingsArray[1]);
     } else {
       output.push(i);
     }
   }
-  return output
+  return output;
 };
 
 exports.calculatorModule = Calculator;
