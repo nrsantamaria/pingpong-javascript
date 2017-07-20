@@ -1,6 +1,6 @@
 # _Ping Pong Numbers Game_
 
-#### _This is a page that collects the users number and displays it back unless it is divisible by 3, 5 or 15, Friday, March 31, 2017_
+### By Nicole Santamaria and Niklas Long
 
 #### By _**Nicole Santamaria**_
 
@@ -25,22 +25,15 @@ _This webpage is a form with which collect a number from the user. There number 
 	- Input: 17
 	- Output: 17
 
-## Setup/Installation Requirements
+## Installation
+	* `git clone https://github.com/nrsantamaria/alarm`
+	* `cd alarm`
+	* `npm install`
+	* `bower install`
 
-* _Ensure connection to the Internet_
-* _Enter the following URL in your computer browser to access the active git hub link to this page: https://nrsantamaria.github.io/pingpong/_
-* _OR_
-* _On a mac using spotlight search type in terminal_
-* _Once in terminal run the command: cd desktop_
-* _Run the command: git clone https://github.com/nrsantamaria/pingpong.git_
-* _Run the command: cd pingpong_
-* _Run the command: atom ._
-* _This will open all of the files included in the survey folder including index.html, README.md, jquery-3.2.0.js, scripts.js, bootstrap.css and styles.css_
-* _To make changes to the text on the page that the user will see you will need to access the index.html file._
-* _To make changes to the look of the file you will need to access the styles.css file._
-* _To make changes to the functions of the form you will need to access the scripts.js file._
+## Running / Development
+* `open index.html`
 
-a
 ## Known Bugs
 
 _There are no known bugs at this time._
@@ -48,10 +41,6 @@ _There are no known bugs at this time._
 ## Support and contact details
 
 _Please contact Nicole Santamaria at NicoleRSantamaria@gmail.com if you have any questions._
-
-## Technologies Used
-
-_The results of this form are hidden until a response is provided._
 
 ### License
 
